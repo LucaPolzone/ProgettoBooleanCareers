@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('background.jpg');
+  background-size: cover;
+  color: #FFFFFF;
+}
+
+#container {
+  background-color: rgba(0,0,0,0.5);
+  width: 920px;
+  border-radius: 2%;
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: 70px;
+  padding: 60px;
+}
+
+/* Intestazione sito web */
+
+header {
+  text-align: center;
+}
+
+#logo {
+  width: 220px;
+}
+
+#headline {
+  margin-bottom: 10px;
+  color: #00DD00;
+}
+
+/* Barra di navigazione */
+
+nav {
+  padding: 10px;
+  text-align: center;
+  background-color: #00DD00;
+}
+
+/* Contenuto homepage */
+
+section {
+  padding-top: 30px;
+}
+
+.title {
+  display: inline-block;
+}
+
+.caption {
+  margin-top: 5px;
+}
+
+.arrow::before {
+  content: "\21A6"; /* Simbolo freccia */
+}
+
+/* Elementi batteria */
+
+.battery {
+  padding-top: 5px; /* Questo valore sovrascrive il selettore section grazie alla specificity*/
+}
+
+.charge {
+  margin-top: 5px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+section#a .charge {
+  width: 310px;
+  background-color: #FFCC66;
+}
+
+section#b .charge {
+  width: 480px;
+  background-color: #66CC33;
+}
+
+section#c .charge {
+  width: 140px;
+  background-color: #CC6666;
+}
